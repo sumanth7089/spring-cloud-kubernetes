@@ -1,7 +1,7 @@
 @Library('jenkins-shared-library@main') _
 pipeline {
 
-  agent any
+  agent 4.0
   
   parameters {
 	choice(name: 'action', choices: 'create\nrollback', description: 'Create/rollback of the deployment')
